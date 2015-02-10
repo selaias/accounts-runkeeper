@@ -12,8 +12,7 @@ if (Meteor.isClient) {
   };
 } else {
   Accounts.addAutopublishFields({
-   
     forLoggedInUser: ['services.runkeeper'],
-    forOtherUsers: ['services.runkeeper.name', ]
+    forOtherUsers: ['services.runkeeper.name']
   });
 }
