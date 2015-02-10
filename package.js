@@ -7,12 +7,13 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-
+  
+  api.versionsFrom('1.0.3.1');
   api.use('accounts-base', ['client', 'server']);
   api.imply('accounts-base', ['client', 'server']);
   api.use('accounts-oauth', ['client', 'server']);
   
-  api.use('selaias:runkeeper', ['client', 'server']);
+  api.use('selaias:runkeeper@0.2.1', ['client', 'server']);
 
   api.addFiles("runkeeper.js");
 
