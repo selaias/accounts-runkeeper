@@ -12,6 +12,7 @@ Package.onUse(function(api) {
   api.use('accounts-base', ['client', 'server']);
   api.imply('accounts-base', ['client', 'server']);
   api.use('accounts-oauth', ['client', 'server']);
+  api.use('mrt:moment', ['client', 'server']);
   
   api.use('selaias:runkeeper@0.6.0', ['client', 'server']);
 
