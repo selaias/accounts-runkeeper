@@ -1,6 +1,6 @@
 Package.describe({
   name: 'selaias:accounts-runkeeper',
-  version: '0.9.0',
+  version: '1.0.0',
   summary: 'Login service for Runkeeper accounts',
   git: 'https://github.com/selaias/accounts-runkeeper.git',
   documentation: 'README.md'
@@ -13,7 +13,7 @@ Package.onUse(function(api) {
   api.imply('accounts-base', ['client', 'server']);
   api.use('accounts-oauth', ['client', 'server']);
   
-  api.use('selaias:runkeeper@0.8.0', ['client', 'server']);
+  api.use('selaias:runkeeper@1.0.0', ['client', 'server']);
 
   api.addFiles("runkeeper.js");
 
